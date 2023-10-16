@@ -1,0 +1,22 @@
+<div class="row">
+    <div class="col-sm-4 offset-md-4">
+        <div class="card card-body">
+            <form (submit)="edit ? updateProduct() : submitProduct()">
+                <div class="form-group">
+                    <input type="text" name="name"[(ngModel)] = "product.name" class="form-control" pplaceholder="product Name" autofocus>
+                </div>
+
+                <div class="form-group">
+                    <input type="number" name="price"[(ngModel)] = "product.price" class="form-control" placeholder="product price" autofocus>
+                </div>
+
+                <div class="form-group">
+                    <input type="number" name="sku"[(ngModel)] = "product.sku" class="form-control" placeholder="sku" autofocus>
+                </div>
+                <button class="btn btn-primary btn block">
+                    Save
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
